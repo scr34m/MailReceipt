@@ -51,7 +51,7 @@
 
 - (void)MPPAwakeFromNib {
     /*
-     El Capitan
+     El Capitan + Sierra
      NSStackView
        +- NSTextField (Subject)
        +- NSTextField (Subject)

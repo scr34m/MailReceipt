@@ -16,3 +16,4 @@
 @interface MailReceiptPlugin (NoImplementation)
 + (id)sharedInstance;
 @end
+ 
