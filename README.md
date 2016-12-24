@@ -3,14 +3,14 @@ MailReceipt
 
 Mail Receipt is a Mac OS X application which is adds two button to composing window for delivery notification and read receipt requests.
 
-Latest supported version is macOS Sierra Mail 10.1 (3251)
+Latest supported version is macOS Sierra Mail 10.2 (3259)
 
 Install
 -------
 
 1. To allow bundle plugins in Mail.app type in terminal: <pre>defaults write com.apple.mail EnableBundles -bool true</pre>
 
-2. Download https://dl.dropboxusercontent.com/u/4965322/MailReceipt-0.2.1.pkg
+2. Download https://dl.dropboxusercontent.com/u/4965322/MailReceipt-0.2.2.pkg
 
 3. Install
 
