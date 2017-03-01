@@ -18,6 +18,10 @@
 		61401D531D8DBBCE002672FD /* MailReceiptDebug.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 61401D511D8DBB00002672FD /* MailReceiptDebug.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		615828671D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 615828661D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m */; };
 		6158286D1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m in Sources */ = {isa = PBXBuildFile; fileRef = 6158286C1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m */; };
+		619668DE1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */; };
+		619668DF1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */; };
+		619668E21E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */; };
+		619668E31E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */; };
 		619F2CC11D8BDF0C00BC8A84 /* MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F2CC01D8BDF0C00BC8A84 /* MailReceiptPlugin.m */; };
 		619F31661D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F31651D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m */; };
 		61D44ADA1D8C12AD00752CAA /* CodeInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D44AD91D8C12AD00752CAA /* CodeInjector.m */; };
@@ -54,6 +58,10 @@
 		615828661D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ComposeBackEnd+MailReceiptPlugin.m"; sourceTree = "<group>"; };
 		6158286B1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LPDynamicIvars.h"; sourceTree = "<group>"; };
 		6158286C1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LPDynamicIvars.m"; sourceTree = "<group>"; };
+		619668DC1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFSMTPConnection+MailReceiptPlugin.h"; sourceTree = "<group>"; };
+		619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFSMTPConnection+MailReceiptPlugin.m"; sourceTree = "<group>"; };
+		619668E01E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MFSMTPDeliverer+MailReceiptPlugin.h"; sourceTree = "<group>"; };
+		619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MFSMTPDeliverer+MailReceiptPlugin.m"; sourceTree = "<group>"; };
 		619F2CB61D8BDEF400BC8A84 /* MailReceipt.mailbundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MailReceipt.mailbundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		619F2CB91D8BDEF400BC8A84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		619F2CBF1D8BDF0C00BC8A84 /* MailReceiptPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MailReceiptPlugin.h; sourceTree = "<group>"; };
@@ -1368,6 +1376,10 @@
 				615828661D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m */,
 				6158286B1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.h */,
 				6158286C1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m */,
+				619668DC1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.h */,
+				619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */,
+				619668E01E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.h */,
+				619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */,
 			);
 			path = MailReceipt;
 			sourceTree = "<group>";
@@ -2748,6 +2760,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619668E31E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */,
 				61401D431D8DBB00002672FD /* ComposeBackEnd+MailReceiptPlugin.m in Sources */,
 				61401D441D8DBB00002672FD /* JRLPSwizzle.m in Sources */,
 				61401D451D8DBB00002672FD /* CCLog.m in Sources */,
@@ -2755,6 +2768,7 @@
 				61401D471D8DBB00002672FD /* NSObject+LPDynamicIvars.m in Sources */,
 				61401D481D8DBB00002672FD /* HeadersEditor+MailReceiptPlugin.m in Sources */,
 				61401D491D8DBB00002672FD /* MailReceiptPlugin.m in Sources */,
+				619668DF1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2762,6 +2776,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				619668E21E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */,
 				615828671D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m in Sources */,
 				61D44ADD1D8C14A400752CAA /* JRLPSwizzle.m in Sources */,
 				61D44AE01D8C14D500752CAA /* CCLog.m in Sources */,
@@ -2769,6 +2784,7 @@
 				6158286D1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m in Sources */,
 				619F31661D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m in Sources */,
 				619F2CC11D8BDF0C00BC8A84 /* MailReceiptPlugin.m in Sources */,
+				619668DE1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

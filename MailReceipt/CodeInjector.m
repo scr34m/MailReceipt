@@ -16,6 +16,12 @@
 
 + (NSDictionary *)commonHooks {
     return @{
+             @"MFSMTPDeliverer": @[
+                     @"deliverMessageHeaderData:bodyData:toRecipients:",
+                     ],
+             @"MFSMTPConnection": @[
+                     @"_sendCommand:length:argument:dontLogArgumentRange:trailer:",
+                     ],
              @"HeadersEditor": @[
                      @"awakeFromNib",
                      ],
