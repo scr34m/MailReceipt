@@ -31,5 +31,9 @@
 		<string>36CCB8BB-2207-455E-89BC-B9D6E47ABB5B</string>
 		<string>1CD3B36A-0E3B-4A26-8F7E-5BDF96AAC97E</string>
 	</array>
+	<key>Supported10.13PluginCompatibilityUUIDs</key>
+	<array>
+		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
+	</array>
 </dict>
 </plist>
