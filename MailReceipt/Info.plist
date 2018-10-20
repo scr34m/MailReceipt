@@ -35,5 +35,9 @@
 	<array>
 		<string>C86CD990-4660-4E36-8CDA-7454DEB2E199</string>
 	</array>
+	<key>Supported10.14PluginCompatibilityUUIDs</key>
+	<array>
+		<string>A4343FAF-AE18-40D0-8A16-DFAE481AF9C1</string>
+	</array>
 </dict>
 </plist>

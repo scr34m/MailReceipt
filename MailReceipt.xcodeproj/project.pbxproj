@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		61401D401D8DB98A002672FD /* MailReceipt.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 619F2CB61D8BDEF400BC8A84 /* MailReceipt.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		61401D431D8DBB00002672FD /* ComposeBackEnd+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 615828661D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m */; };
 		61401D441D8DBB00002672FD /* JRLPSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D44ADC1D8C14A400752CAA /* JRLPSwizzle.m */; };
 		61401D451D8DBB00002672FD /* CCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D44ADF1D8C14D500752CAA /* CCLog.m */; };
@@ -15,13 +14,13 @@
 		61401D471D8DBB00002672FD /* NSObject+LPDynamicIvars.m in Sources */ = {isa = PBXBuildFile; fileRef = 6158286C1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m */; };
 		61401D481D8DBB00002672FD /* HeadersEditor+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F31651D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m */; };
 		61401D491D8DBB00002672FD /* MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F2CC01D8BDF0C00BC8A84 /* MailReceiptPlugin.m */; };
-		61401D531D8DBBCE002672FD /* MailReceiptDebug.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 61401D511D8DBB00002672FD /* MailReceiptDebug.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		615828671D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 615828661D8D87BA0002BCB6 /* ComposeBackEnd+MailReceiptPlugin.m */; };
 		6158286D1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m in Sources */ = {isa = PBXBuildFile; fileRef = 6158286C1D8D9BEA0002BCB6 /* NSObject+LPDynamicIvars.m */; };
 		619668DE1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */; };
 		619668DF1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668DD1E66B2DD00D147FE /* MFSMTPConnection+MailReceiptPlugin.m */; };
 		619668E21E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */; };
 		619668E31E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619668E11E6722E000D147FE /* MFSMTPDeliverer+MailReceiptPlugin.m */; };
+		61981F29217B6870005A35A4 /* MailReceipt.mailbundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 619F2CB61D8BDEF400BC8A84 /* MailReceipt.mailbundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		619F2CC11D8BDF0C00BC8A84 /* MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F2CC01D8BDF0C00BC8A84 /* MailReceiptPlugin.m */; };
 		619F31661D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 619F31651D8C026F00BC8A84 /* HeadersEditor+MailReceiptPlugin.m */; };
 		61D44ADA1D8C12AD00752CAA /* CodeInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D44AD91D8C12AD00752CAA /* CodeInjector.m */; };
@@ -32,23 +31,22 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		61401D4C1D8DBB00002672FD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "~/Library/Mail/Bundles";
 			dstSubfolderSpec = 0;
 			files = (
-				61401D531D8DBBCE002672FD /* MailReceiptDebug.mailbundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		615828611D8D73AC0002BCB6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 8;
 			dstPath = /Library/Mail/Bundles;
 			dstSubfolderSpec = 0;
 			files = (
-				61401D401D8DB98A002672FD /* MailReceipt.mailbundle in CopyFiles */,
+				61981F29217B6870005A35A4 /* MailReceipt.mailbundle in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 0;
+			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
