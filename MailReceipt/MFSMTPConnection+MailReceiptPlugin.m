@@ -18,7 +18,7 @@
         // ex.: [NOTIFY]scr34m@frontember.hu@frontember.hu
         if ([arg3 rangeOfString:@"[NOTIFY]"].location != NSNotFound) {
             // 8 is the length of our mark [NOTIFY]
-            NSRange finalRange = NSMakeRange(8, [arg3 rangeOfString:@"@" options:NSBackwardsSearch].location - 8);
+            NSRange finalRange = NSMakeRange(8, arg3.length - 8);
             // add extra ESMTP command for DSN
             arg3 = [NSString stringWithFormat: @"%@> NOTIFY=SUCCESS,FAILURE", [arg3 substringWithRange:finalRange]];
             arg5 = 0;

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ComposeBackEnd_MailReceiptPlugin : NSObject
-- (id)MPPNewOutgoingMessageUsingWriter:(id)writer contents:(id)contents headers:(id)headers isDraft:(BOOL)isDraft shouldBePlainText:(BOOL)shouldBePlainText;
+- (id)MPP_newOutgoingMessageUsingWriter:(id)writer contents:(id)contents headers:(id)headers isDraft:(BOOL)isDraft;
 @end

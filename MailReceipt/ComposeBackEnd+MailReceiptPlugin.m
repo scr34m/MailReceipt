@@ -7,18 +7,18 @@
 //
 
 #import "ComposeBackEnd+MailReceiptPlugin.h"
-#import <MCMutableMessageHeaders.h>
-#import <ComposeBackEnd.h>
+#import "MCMutableMessageHeaders.h"
+#import "ComposeBackEnd.h"
 #import "NSObject+LPDynamicIvars.h"
 #import "MailReceiptPlugin.h"
 
 @implementation ComposeBackEnd_MailReceiptPlugin
 
-- (id)MPPNewOutgoingMessageUsingWriter:(id)writer contents:(id)contents headers:(id)headers isDraft:(BOOL)isDraft shouldBePlainText:(BOOL)shouldBePlainText {
+- (id)MPP_newOutgoingMessageUsingWriter:(id)writer contents:(id)contents headers:(id)headers isDraft:(BOOL)isDraft {
     ComposeBackEnd *backEnd = (ComposeBackEnd *)self;
     
     NSString *senderEmail = [MailReceiptPlugin extractEmailAddress:backEnd.sender];
-    
+
     if ([[backEnd getIvar:@"readReceipt"] boolValue]) {
         [headers setHeader:senderEmail forKey:@"Disposition-Notification-To"];
     }
@@ -27,7 +27,7 @@
         [headers setHeader:senderEmail forKey:@"Return-Receipt-To"];
     }
     
-    return [self MPPNewOutgoingMessageUsingWriter:writer contents:contents headers:headers isDraft:isDraft shouldBePlainText:shouldBePlainText];
+    return [self MPP_newOutgoingMessageUsingWriter:writer contents:contents headers:headers isDraft:isDraft];
 }
 
 @end

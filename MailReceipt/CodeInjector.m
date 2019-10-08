@@ -26,7 +26,7 @@
                      @"awakeFromNib",
                      ],
              @"ComposeBackEnd": @[
-                     @"newOutgoingMessageUsingWriter:contents:headers:isDraft:shouldBePlainText:",
+                     @"_newOutgoingMessageUsingWriter:contents:headers:isDraft:",
                      ]
              };
 }
@@ -47,14 +47,9 @@
         for(NSString *class in commonHooks)
             hooks[class] = [NSMutableArray arrayWithArray:commonHooks[class]];
         
-        /* Fix, once we can compile with stable Xcode including 10.9 SDK. */
-//        if(floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_8)
-//            [self applyHookChangesForVersion:@"10.9" toHooks:hooks];
-        //if(floor(NSAppKitVersionNumber) > NSAppKitVersionNumber10_9)
-//            [self applyHookChangesForVersion:@"10.10" toHooks:hooks];
         if([MailReceiptPlugin isElCapitan])
             [self applyHookChangesForVersion:@"10.11" toHooks:hooks];
-        
+
         _hooks = [NSDictionary dictionaryWithDictionary:hooks];
     });
     
@@ -63,11 +58,7 @@
 
 + (void)applyHookChangesForVersion:(NSString *)osxVersion toHooks:(NSMutableDictionary *)hooks {
     NSDictionary *hookChanges;
-//    if([osxVersion isEqualToString:@"10.9"])
-//        hookChanges = [self hookChangesForMavericks];
-//    else if([osxVersion isEqualToString:@"10.10"])
-//        hookChanges = [self hookChangesForYosemite];
-//    else
+
     if([osxVersion isEqualToString:@"10.11"])
         hookChanges = [self hookChangesForElCapitan];
     

@@ -1,2 +1,3 @@
-#! /bin/bash
-defaults read /Applications/Mail.app/Contents/Info PluginCompatibilityUUID
+#!/bin/bash
+
+defaults read /System/Applications/Mail.app/Contents/Info PluginCompatibilityUUID

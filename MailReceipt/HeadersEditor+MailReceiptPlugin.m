@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
 #import "HeadersEditor+MailReceiptPlugin.h"
-#import <HeadersEditor.h>
-#import <ComposeBackEnd.h>
+#import "HeadersEditor.h"
+#import "ComposeBackEnd.h"
 #import "MailReceiptPlugin.h"
-#import <ComposeViewController.h>
+#import "ComposeViewController.h"
 #import "NSObject+LPDynamicIvars.h"
 
 @implementation HeadersEditor_MailReceiptPlugin
