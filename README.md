@@ -21,4 +21,4 @@ Install
 Support
 -------
 
-BTC 13GZoqBdtraYQ4cBg7t2n4J9XnBuba3yfq or with Paypal [![Donate with Paypal](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EHPY7RM8A4JY)
+BTC 3AmU9LBHVw4zoEfuZbLikfPTnxMsgJvFdU or with Paypal [![Donate with Paypal](https://www.paypalobjects.com/webstatic/en_US/btn/btn_donate_pp_142x27.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=6EHPY7RM8A4JY)
