@@ -9,8 +9,8 @@
 #import "AccountStatusDataSourceDelegate-Protocol.h"
 #import "MUIAddressFieldContextProvider-Protocol.h"
 #import "MUIAddressFieldSenderAddressHandler-Protocol.h"
-#import "NSStackViewDelegate-Protocol.h"
-#import "NSUserInterfaceValidations-Protocol.h"
+// #import "NSStackViewDelegate-Protocol.h"
+//#import "NSUserInterfaceValidations-Protocol.h"
 
 @class ComposeHeaderRowView, ComposeViewController, MUIAddressField, NSArray, NSButtonCell, NSMenu, NSMutableArray, NSPopUpButton, NSSegmentedControl, NSStackView, NSString, NSTextField, NSView;
 

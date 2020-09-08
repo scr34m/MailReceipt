@@ -10,8 +10,8 @@
 #import "ImageResizerDelegate-Protocol.h"
 #import "MCActivityTarget-Protocol.h"
 #import "MFScriptingMessage-Protocol.h"
-#import "NSStreamDelegate-Protocol.h"
-#import "NSUserActivityDelegate-Protocol.h"
+//#import "NSStreamDelegate-Protocol.h"
+//#import "NSUserActivityDelegate-Protocol.h"
 
 @class DOMHTMLDocument, DOMNode, EditableWebMessageDocument, MCInvocationQueue, MCMessage, MCMessageHeaders, MCParsedMessage, MFDeliveryAccount, MFMailAccount, MFMailbox, MFSignature, NSArray, NSFont, NSInputStream, NSMutableArray, NSMutableData, NSMutableDictionary, NSMutableSet, NSNumber, NSOperationQueue, NSOutputStream, NSPort, NSScriptObjectSpecifier, NSString, NSUUID, NSUndoManager, NSUserActivity, StationeryController;
 
