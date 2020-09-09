@@ -18,6 +18,15 @@ Install
    - Check mark the "MailReceipt.mailbundle"
    - Click "Apply and Restart Mail.app" button
 
+
+Usage
+-----
+
+The buttons visible in the subject line in the email compose window are:
+- `D` is a request for the receiving mail server to send a DSN (delivery status notification) as soon as it receives the email (i.e. Return-Receipt-To).
+- `R` is a request for the receiving email client to send a DSN as soon as the person opens the email (i.e. Disposition-Notification-To).
+
+
 Support
 -------
 

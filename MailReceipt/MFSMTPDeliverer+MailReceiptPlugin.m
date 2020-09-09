@@ -14,7 +14,7 @@
 
     // check for disposition notification header, if found mark recipents addresses
     NSString *s = [[NSString alloc] initWithData:arg1 encoding:NSUTF8StringEncoding];
-    if ([s rangeOfString:@"Disposition-Notification-To: "].location != NSNotFound) {
+    if ([s rangeOfString:@"Return-Receipt-To: "].location != NSNotFound) {
         for(int i = 0; i < arg3.count; i++)
         {
             [arg3 replaceObjectAtIndex:i withObject:[@"[NOTIFY]" stringByAppendingString:[arg3 objectAtIndex:i]]];
