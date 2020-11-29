@@ -3,7 +3,7 @@ MailReceipt
 
 Mail Receipt is a Mac OS X application which is adds two button to composing window for delivery notification and read receipt requests.
 
-Latest supported version is macOS Catalina Mail 13.4 (3608.80.23.2.2)
+Latest supported version is macOS Big Sur Mail 14.0 (3654.20.0.2.21)
 
 Install
 -------
