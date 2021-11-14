@@ -24,9 +24,13 @@
 	<string>Copyright © 2016. Gyorvari Gabor. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string>MailReceiptPlugin</string>
-	<key>Supported11.6PluginCompatibilityUUIDs</key>
+	<key>Supported12.0PluginCompatibilityUUIDs</key>
 	<array>
-		<string>D985F0E4-3BBC-4B95-BBA1-12056AC4A531</string>
+		<string>25288CEF-7D9B-49A8-BE6B-E41DA6277CF3</string>
+	</array>
+	<key>Supported12.1PluginCompatibilityUUIDs</key>
+	<array>
+		<string>25288CEF-7D9B-49A8-BE6B-E41DA6277CF3</string>
 	</array>
 </dict>
 </plist>
