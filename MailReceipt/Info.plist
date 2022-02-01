@@ -32,5 +32,13 @@
 	<array>
 		<string>6FF8B077-81FA-45A4-BD57-17CDE79F13A5</string>
 	</array>
+	<key>Supported12.2PluginCompatibilityUUIDs</key>
+	<array>
+		<string>6FF8B077-81FA-45A4-BD57-17CDE79F13A5</string>
+	</array>
+	<key>Supported12.3PluginCompatibilityUUIDs</key>
+	<array>
+		<string>6FF8B077-81FA-45A4-BD57-17CDE79F13A5</string>
+	</array>
 </dict>
 </plist>
