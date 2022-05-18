@@ -3,7 +3,7 @@ MailReceipt
 
 Mail Receipt is a Mac OS X application which is adds two button to composing window for delivery notification and read receipt requests.
 
-Latest supported version is macOS Monterey (12.3) Mail 16.0 (3696.80.82.1.1)
+Latest supported version is macOS Monterey (12.4) Mail 16.0 (3696.100.31)
 
 Install
 -------
