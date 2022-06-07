@@ -52,7 +52,7 @@ int LoggingLevel = 0;
 }
 
 - (NSString *)version {
-    return @"0.7.11";
+    return @"0.7.12";
 }
 
 - (id)init {
@@ -67,8 +67,12 @@ int LoggingLevel = 0;
 + (NSString *) extractEmailAddress: (NSString *)address
 {
     NSRange r = [address rangeOfString:@"<" options:NSBackwardsSearch];
-    NSString *senderEmail = [address substringFromIndex:r.location + 1];
-    r = [senderEmail rangeOfString:@">" options:NSBackwardsSearch];
-    return [senderEmail substringToIndex:r.location];
+    if (r.location != NSNotFound) {
+        NSString *senderEmail = [address substringFromIndex:r.location + 1];
+        r = [senderEmail rangeOfString:@">" options:NSBackwardsSearch];
+        return [senderEmail substringToIndex:r.location];
+    } else {
+        return address;
+    }
 }
 @end
