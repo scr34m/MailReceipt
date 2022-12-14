@@ -57,5 +57,9 @@
 	<array>
 		<string>890E3F5B-9490-4828-8F3F-B6561E513FCC</string>
 	</array>
+	<key>Supported13.1PluginCompatibilityUUIDs</key>
+	<array>
+		<string>890E3F5B-9490-4828-8F3F-B6561E513FCC</string>
+	</array>
 </dict>
 </plist>
