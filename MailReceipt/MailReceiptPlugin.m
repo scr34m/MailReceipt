@@ -52,7 +52,7 @@ int LoggingLevel = 0;
 }
 
 - (NSString *)version {
-    return @"0.7.16";
+    return @"0.7.17";
 }
 
 - (id)init {
