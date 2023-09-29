@@ -1,3 +1,6 @@
+Archived because of changes in macOS Sonoma, doesn't load legacy plugins anymore.
+=========
+
 MailReceipt
 =========
 
